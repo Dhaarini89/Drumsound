@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
   MediaPlayer M1,M2;
@@ -21,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
         M1 = MediaPlayer.create(this,R.raw.one);
         M2 = MediaPlayer.create(this,R.raw.two);
+
+        Toast.makeText(getApplicationContext(),"extra line",Toast.LENGTH_SHORT).show();
 
     }
 
